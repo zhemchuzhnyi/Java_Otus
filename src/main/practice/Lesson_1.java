@@ -5,7 +5,7 @@ public class Lesson_1 {
         String i = "Привет. ";
         String o = "Меня зовут Андрей! \n";
         String p = "Рад познакомиться!) ";
-        String a = "Я начинаю изучение языка Java!!!";
+        String a = "Я начинаю изучение языка Java!";
         System.out.println(i + o + p + a);
     }
 }
