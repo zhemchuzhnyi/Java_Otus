@@ -13,6 +13,22 @@ target/
 *.iml
 *.ipr
 pom.xml
+# IntelliJ IDEA
+.idea/
+
+# Компилированные файлы
+*.class
+*.jar
+
+# Файлы IDE
+*.iml
+*.ipr
+*.iws
+
+# Логи и кеши
+*.log
+/out/
+target/
 
 ### Eclipse ###
 .apt_generated
