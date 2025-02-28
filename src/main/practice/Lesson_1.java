@@ -1,6 +1,6 @@
 package practice;
 
-//Знакомство с IDE, пакеты, Hello World//
+//Знакомство с IDE, пакеты, Hello World
 
 public class Lesson_1 {
     public static void main(String[] args) {
