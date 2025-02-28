@@ -1,6 +1,6 @@
 package practice;
 
-//Переменные, их типы и простые операции с ними
+//Переменные, их типы и простые операции с ними//
 
 public class Lesson_2 {
     public static void main(String[] args) {
