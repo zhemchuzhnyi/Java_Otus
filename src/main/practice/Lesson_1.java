@@ -1,5 +1,7 @@
 package practice;
 
+//Знакомство с IDE, пакеты, Hello World
+
 public class Lesson_1 {
     public static void main(String[] args) {
         String i = "Привет. ";
@@ -10,3 +12,5 @@ public class Lesson_1 {
         System.out.println(i + o + p + a + s);
     }
 }
+
+
