@@ -13,8 +13,13 @@ public class Lesson_2 {
         // Переменная ссылочного типа
         Cat cat = new Cat();
         Cat cat1 = new Cat();
+        Cat cat3 = new Cat();
         Dog dog = new Dog();
         Dog dog1 = new Dog();
+        Dog dog3 = new Dog();
+        Bird bird = new Bird();
+        Bird bird1 = new Bird();
+
 
         // Примитивные типы хранят только 1 значение - (хранятся в стеке)
         // Ссылочный тип - ссылка на обьект хранится в 1й части (стеке),
