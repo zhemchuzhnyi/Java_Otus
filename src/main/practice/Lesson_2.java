@@ -20,6 +20,8 @@ public class Lesson_2 {
         Bird bird = new Bird();
         Bird bird1 = new Bird();
         Pig pig = new Pig();
+        Pig pig1 = new Pig();
+
 
 
 
