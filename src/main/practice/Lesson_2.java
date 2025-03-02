@@ -19,6 +19,8 @@ public class Lesson_2 {
         Dog dog3 = new Dog();
         Bird bird = new Bird();
         Bird bird1 = new Bird();
+        Pig pig = new Pig();
+
 
 
         // Примитивные типы хранят только 1 значение - (хранятся в стеке)
