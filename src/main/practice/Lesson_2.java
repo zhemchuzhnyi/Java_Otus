@@ -21,6 +21,8 @@ public class Lesson_2 {
         Bird bird1 = new Bird();
         Pig pig = new Pig();
         Pig pig1 = new Pig();
+        Pig pig2 = new Pig();
+
 
 
 
