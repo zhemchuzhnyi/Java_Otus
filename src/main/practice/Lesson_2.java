@@ -8,7 +8,7 @@ public class Lesson_2 {
         int i = 130;
         char o = 'h';
         boolean y = true;
-        System.out.println(y);
+        // System.out.println(y);
 
         // Переменная ссылочного типа
         Cat cat = new Cat();
