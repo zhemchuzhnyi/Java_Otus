@@ -22,6 +22,7 @@ public class Lesson_2 {
         Pig pig = new Pig();
         Pig pig1 = new Pig();
         Pig pig2 = new Pig();
+        Insect insect = new Insect();
 
 
 
