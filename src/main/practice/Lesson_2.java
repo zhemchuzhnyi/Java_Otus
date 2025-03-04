@@ -54,6 +54,13 @@ public class Lesson_2 {
 
         byte z3 = (byte) z2; // Большое кладем в мальнькое
 
+        String yui = "Hello Hello Hello Hello"; // Строковый тип - ссылочный, не проимитивный
+        String yui2 = yui.toUpperCase(); // преобразовывает сообщение в БОЛЬШИЕ буквы
+
+        System.out.println(yui2);
+
+
+
 
 
 
