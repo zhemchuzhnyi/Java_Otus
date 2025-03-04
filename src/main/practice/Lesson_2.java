@@ -2,6 +2,9 @@ package practice;
 
 //Переменные, их типы и простые операции с ними
 
+import static java.lang.Integer.sum;
+import static java.lang.Math.max;
+
 public class Lesson_2 {
     public static void main(String[] args) {
 
@@ -26,14 +29,41 @@ public class Lesson_2 {
         Insect insect1 = new Insect();
         Insect insect2 = new Insect();
 
-
-
-
-
-
         // Примитивные типы хранят только 1 значение - (хранятся в стеке)
         // Ссылочный тип - ссылка на обьект хранится в 1й части (стеке),
         // информация - то что кладется в переменную во 2й части (в куче)
+
+        Integer x = 120;
+        Integer c = 180;
+
+        // Выполняется метод - выводится максимальное значение
+        Integer xx = max(11,120);
+
+        // Выполняется метод - выводится сумма чисел
+        Integer xy = sum(x,c);
+        //System.out.println(xy);
+
+        byte m = 120;
+        int mm = m + 150;
+        System.out.println(mm);
+
+        byte z = 6;
+        int z2 = 170; // Лежит число 6 // 2 байта
+        long z4 = 56745;
+
+
+        byte z3 = (byte) z2; // Большое кладем в мальнькое
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
