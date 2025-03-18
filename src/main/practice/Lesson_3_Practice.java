@@ -80,14 +80,14 @@ public class Lesson_3_Practice {
         }
 
         //while
-        int cash = 100;
+        int cash = 120;
         while (cash > 0) {
             System.out.println("Купил что то очень нужное");
             cash = cash - 20;
         }
 
         //do-while
-        int cash1 = 80;
+        int cash1 = 100;
         do {
             System.out.println("Купил что-то очень нужное 2");
             cash1 = cash1 - 20;
