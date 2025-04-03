@@ -16,54 +16,62 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class myFirstTest {
-    private static WebDriver
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.assertj.core.api.SoftAssertions;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.jupiter.api.Assertions.*;
 
+public class myFirstTest {
+    private static WebDriver driver;
+    private  final Logger logger =LogManager.getLogger(myFirstTest.class);
     @BeforeAll
     static void beforeAll() {
-        System.out.println("Выполняется один раз перед всеми тестами");
+        //только один раз выполнение
     }
-
     @BeforeEach
     void setUp() {
         System.out.println("сетап тестов");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-
     }
-
     @Tag("auto")
     @DisplayName("Тест на авторизацию администратора")
-    @RepeatedTest(10)
+    @Test
     void nameFor() {
         System.out.println("мой первый тест");
     }
-
     @Tag("auto2")
     @Test
     void name2() {
         System.out.println("мой первый тест2");
+        driver.get("https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager/5.6.3");
+        logger.warn("мы зашл  на мавен репозиторий");
     }
-
     @Tag("auto2")
     @ParameterizedTest
-    @ValueSource(ints = {1, 6, 9})
-    void name3(int value) {
-        System.out.println("мой первый тест2, значение: " + value);
-       // assertEquals(value, 9);
-        boolean x = true;
+    @ValueSource(ints ={1,6,9})
+    void name3(int arg) {
+        System.out.println("мой первый тест2" +arg);
+        //assertEquals(arg,9);
+        boolean x=false;
+        //assertEquals(arg,9);
         SoftAssertions soft = new SoftAssertions();
-        soft.assertThat(value);
+        assertTrue(x);
+        soft.assertThat(arg);
         assertTrue(x);
     }
-
     @AfterEach
     void tearDown() {
         System.out.println("шаги завершения теста");
     }
-
     @AfterAll
     static void afterAll() {
-        System.out.println("Выполняется один раз после всех тестов");
+        //один раз
     }
 }
