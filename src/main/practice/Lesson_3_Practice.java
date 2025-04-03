@@ -87,7 +87,7 @@ public class Lesson_3_Practice {
         }
 
         //do-while
-        int cash1 = 180;
+        int cash1 = 160;
         do {
             System.out.println("Купил что-то очень нужное 2");
             cash1 = cash1 - 20;
